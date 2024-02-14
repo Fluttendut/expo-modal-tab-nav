@@ -1,4 +1,4 @@
-import { Stack, useRouter, useSearchParams } from "expo-router";
+import { Stack, useRouter, useLocalSearchParams } from "expo-router";
 import {
   Text,
   Button,
@@ -15,7 +15,7 @@ import * as ImagePicker from "expo-image-picker";
 
 export default function Update() {
   const router = useRouter();
-  const { id } = useSearchParams();
+  const { id } = useLocalSearchParams();
   const [caption, setCaption] = useState("");
   const [image, setImage] = useState(
     "https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRoT6NNDUONDQmlthWrqIi_frTjsjQT4UZtsJsuxqxLiaFGNl5s3_pBIVxS6-VsFUP_"
