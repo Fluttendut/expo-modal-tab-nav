@@ -1,13 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 export default function Users() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Users</Text>
-        <Text style={styles.subtitle}>
-          This is the second page of your app.
-        </Text>
+        <Image source={{ uri: 'https://png.pngtree.com/png-vector/20220910/ourmid/pngtree-purple-gradient-coming-soon-offer-sticker-design-free-vector-download-png-image_6144033.png' }} style={styles.image} />
       </View>
     </View>
   );
@@ -32,5 +29,13 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 36,
     color: "#38434D",
+  },
+  image: {
+    width: 450, 
+    height: 450, 
+    borderRadius: 50,
+    marginBottom: 20, 
+    aspectRatio: 1,
+    
   },
 });

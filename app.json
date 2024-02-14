@@ -1,10 +1,13 @@
 {
-    "expo": {
-        "scheme": "acme",
-        "web": {
-            "bundler": "metro"
-        },
-        "name": "expo-modal-tab-nav",
-        "slug": "expo-modal-tab-nav"
-    }
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "expo-modal-tab-nav",
+    "slug": "expo-modal-tab-nav",
+    "plugins": [
+      "expo-router"
+    ]
+  }
 }
